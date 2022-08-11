@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <h1> {{room.name}} </h1>
+    <h5>{{room.id}} -- <a href="{% url 'room' room.id %}"> {{room.description}} </a></h5>
+    <h5> Topic : {{room.topic}}</h5>
+
+{% endblock content %}
